@@ -15,25 +15,14 @@ class Paddle(pygame.sprite.Sprite):
     ):
         super().__init__(*groups)
 
-        self.speed = speed
-        self.dir_x = 0
-
-        self.life = life
-
-        self.image = pygame.Surface((width, height))
-        self.rect = self.image.get_frect(center=(x, y))
-
-        self.image.fill(ENTITY_COLOR)
-
     def lose_life(self):
-        self.life -= 1
+        pass
 
     def change_dir(self, dir_x: int):
-        self.dir_x = dir_x
+        pass
 
     def move(self, dt: float):
-        self.rect.x += self.dir_x * self.speed * dt
+        pass
 
     def update(self, dt: float, bounds: pygame.Rect):
-        self.move(dt)
-        self.rect.clamp_ip(bounds)
+        pass
